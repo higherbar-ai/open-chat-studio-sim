@@ -3,12 +3,17 @@
 This project includes a series of Jupyter notebooks and supporting Python modules for data generation and simulation 
 with [Dimagi's Open Chat Studio](https://github.com/dimagi/open-chat-studio).
 
-## Prerequisites
+## Setting up a local environment
+
+You can directly open and run the Jupyter notebooks in Google Colab. However, if you prefer to run the notebooks 
+locally, follow the instructions below to set up your environment.
+
+### Prerequisites
 
 - Python 3.11
 - pip
 
-## Installation
+### Installation
 
 1. Clone the repository:
 
@@ -42,11 +47,11 @@ with [Dimagi's Open Chat Studio](https://github.com/dimagi/open-chat-studio).
 
 ## Usage
 
-See the individual notebooks for usage instructions (and any further setup requirements):
+You can open and run any of these Jupyter notebooks in Google Colab or your local environment:
 
-* `simulate-queries.ipynb` - Executing single-prompt queries against a chatbot experiment 
-* `replay-conversations.ipynb` - Replaying conversations with a chatbot experiment 
-* `simulate-queries.ipynb` - Using one chatbot experiment to simulate users interacting with a second chatbot experiment 
+* `simulate-queries.ipynb` - Execute single-prompt queries against a chatbot experiment 
+* `replay-conversations.ipynb` - Replay conversations with a chatbot experiment 
+* `simulate-queries.ipynb` - Use one chatbot experiment to simulate users interacting with a second chatbot experiment 
 
 ## Credits
 
