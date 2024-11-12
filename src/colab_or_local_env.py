@@ -5,9 +5,6 @@ import sys
 import subprocess
 from typing import Dict, List, Optional, Any
 from pathlib import Path
-import tkinter as tk
-from tkinter import filedialog
-import dotenv
 from dataclasses import dataclass
 import requests
 
@@ -76,6 +73,7 @@ class ColabOrLocalEnv:
             raise Exception(f"Please configure your settings in {config_path}")
 
         if config_path.exists():
+            import dotenv
             dotenv.load_dotenv(config_path)
             self._config_loaded = True
 
@@ -145,9 +143,10 @@ class ColabOrLocalEnv:
             except Exception as e:
                 raise Exception(f"Failed to fetch {module_path}: {str(e)}")
 
-        # Add /content to Python path so imported modules can be found
-        if str(Path("/content")) not in sys.path:
-            sys.path.insert(0, str(Path("/content")))
+        # Ensure that current path is in sys.path
+        import sys
+        import os
+        sys.path.append(os.getcwd())
 
         self._modules_fetched = True
 
@@ -209,6 +208,9 @@ class ColabOrLocalEnv:
             content_dir = Path("/content")
             return [content_dir / filename for filename in uploaded.keys()]
         else:
+            import tkinter as tk
+            from tkinter import filedialog
+
             root = tk.Tk()
             root.withdraw()  # Hide the main window
 
