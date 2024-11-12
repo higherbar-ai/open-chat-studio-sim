@@ -6,8 +6,8 @@
 
 from ocs_api import OCSAPIClient
 import logging
-from athina.datasets import Dataset
-from athina.keys import AthinaApiKey
+from athina_client.datasets import Dataset
+from athina_client.keys import AthinaApiKey
 
 
 class OCSBotToBotSimulator:
