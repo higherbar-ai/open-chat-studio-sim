@@ -206,7 +206,7 @@ class ColabOrLocalEnv:
             from google.colab import files  # type: ignore[import]
             uploaded = files.upload()
             content_dir = Path("/content")
-            return [content_dir / filename for filename in uploaded.keys()]
+            return [str(content_dir / filename) for filename in uploaded.keys()]
         else:
             import tkinter as tk
             from tkinter import filedialog
