@@ -51,7 +51,8 @@ You can open and run any of these Jupyter notebooks in Google Colab or your loca
 
 * `simulate-queries.ipynb` - Execute single-prompt queries against a chatbot experiment 
 * `replay-conversations.ipynb` - Replay conversations with a chatbot experiment 
-* `simulate-queries.ipynb` - Use one chatbot experiment to simulate users interacting with a second chatbot experiment 
+* `simulate-conversations.ipynb` - Use one chatbot experiment to simulate users interacting with a second chatbot 
+  experiment (can simulate based on given context or example conversations) 
 
 ## Credits
 
