@@ -7,3 +7,4 @@ athina-client
 python-dotenv~=1.0.1
 ipython
 ipywidgets
+colab-or-not
