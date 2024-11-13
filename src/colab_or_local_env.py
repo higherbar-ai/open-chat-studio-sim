@@ -1,4 +1,4 @@
-# colab_local_env.py - Tools for working with Google Colab and local development environments
+# colab_or_local_env.py - Tools for working with Google Colab and local development environments
 
 import os
 import sys
